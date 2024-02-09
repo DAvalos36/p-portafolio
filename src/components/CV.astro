@@ -1,0 +1,18 @@
+---
+import Button from '@components/ui/Button.astro';
+---
+
+<section
+	data-testid="cv"
+	id="cv"
+	class="flex flex-col items-center justify-center gap-8 text-black dark:text-white lg:mb-0 lg:h-screen"
+>
+	<div class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2">
+		<h2 class="font-monospace text-2xl text-orange lg:text-4xl">Curriculum</h2>
+		<span class="mb-6 ml-2 h-1 w-10 bg-orange"></span>
+	</div>
+	<div class="flex-grow w-full">
+        <iframe src="CV.pdf" frameborder="0" class="h-full w-full"></iframe>
+    </div>
+	<Button size={'lg'} style={'primary'} name="Contact"><a href="CV.pdf" download="">Descargar CV</a></Button>
+</section>
